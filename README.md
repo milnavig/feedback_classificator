@@ -9,7 +9,8 @@ The 'text-cleaning' folder includes the Node.js app for text cleaning. It remove
 The 'nba' folder includes the Node.js app for feedback's classification using Naive Bayes algorithm.
 
 ## Examples
-Negative feedback:
+Negative feedback: <br />
 ![negative feedback](https://raw.githubusercontent.com/milnavig/feedback_classificator/main/neg.jpg)
-Positive feedback:
+<br />
+Positive feedback: <br />
 ![positive feedback](https://raw.githubusercontent.com/milnavig/feedback_classificator/main/pos.jpg)
