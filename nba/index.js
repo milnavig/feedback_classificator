@@ -34,7 +34,7 @@ function assessment(review) {
 
     let comment_pos = review.reduce((res, el) => {
         if (tokens[el]) {
-            console.log('pos_word ', tokens[el])
+            console.log('pos_word ', tokens[el]);
             return res * (tokens[el].pos / tokens.number_of_pos_words);
         }
         return res;
@@ -42,14 +42,11 @@ function assessment(review) {
 
     let comment_neg = review.reduce((res, el) => {
         if (tokens[el]) {
-            console.log('neg_word ', tokens[el])
+            console.log('neg_word ', tokens[el]);
             return res * (tokens[el].neg / tokens.number_of_neg_words);
         }
         return res;
     }, 1);
-    
-    console.log(comment_neg)
-    console.log(comment_pos)
 
     /*
     let comment_pos = 1;
