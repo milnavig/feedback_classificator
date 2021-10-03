@@ -10,6 +10,6 @@ The 'nba' folder includes the Node.js app for feedback's classification using Na
 
 ## Examples
 Negative feedback:
-[negative feedback](https://raw.githubusercontent.com/milnavig/feedback_classificator/main/neg.jpg)
+![negative feedback](https://raw.githubusercontent.com/milnavig/feedback_classificator/main/neg.jpg)
 Positive feedback:
-[positive feedback](https://raw.githubusercontent.com/milnavig/feedback_classificator/main/pos.jpg)
+![positive feedback](https://raw.githubusercontent.com/milnavig/feedback_classificator/main/pos.jpg)
