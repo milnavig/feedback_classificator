@@ -1,0 +1,17 @@
+{
+  "name": "text-cleaning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-to-text": "^8.0.0",
+    "languagedetect": "^2.0.0",
+    "stopwords-uk": "^0.2.0"
+  }
+}

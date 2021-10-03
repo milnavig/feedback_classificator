@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Classification of reviews</title>
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+        <style>
+            button {
+                margin-top: 5px;
+                display: block;
+            }
+            textarea {
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Classification of reviews</h2>
+        <form>
+            <textarea placeholder="Type your review..." id="review"></textarea>
+            <button id="button">Send</button>
+        </form>
+        <div id="result"></div>
+        <script>
+            let element = document.getElementById('button');
+            let data = document.getElementById('review');
+            element.onclick = (e) => {
+                e.preventDefault();
+                console.log('Hi');
+                fetch('/', { method: 'POST', body: JSON.stringify({review: data.value}), headers: { 'Content-Type': 'application/json' }}).then((res) => res.json()).then(d => {
+                    let element = document.getElementById('result');
+                    element.innerHTML = '<b>' + d.decision + '</b>' + '<br/>' + 'P(review|positive): ' + d.comment_pos + '<br/>' + 'P(review|negative): ' + d.comment_neg + '<br/>' + 'P(negative): ' + d.p_neg + '<br/>' + 'P(positive): ' + d.p_pos;
+                });
+            }
+        </script>
+    </body>
+</html>
